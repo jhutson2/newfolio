@@ -155,7 +155,9 @@
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
-    $('#progress-bar').addClass('animated bounce infinite');
+    $("#progress").open(function(e) {
+        e.preventDefault();
+        $('#progress-bar').addClass('animated bounce infinite');
 
     $("#menu-close").click(function(e) {
         e.preventDefault();
